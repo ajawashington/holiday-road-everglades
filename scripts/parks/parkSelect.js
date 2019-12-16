@@ -1,39 +1,44 @@
-import { useParks } from "./ParkProvider.js";
+let parks = []
 
-const eventHub= document.querySelector(".container")
-const contentTarget = document.querySelector (".parkFilters")
+export const useParks = () => parks
 
-export const parkSelect = () => {
-    const parks = useParks ()
 
-    eventHub.addEventListener("change", changeEvent => { 
-    
-    if (changeEvent.target.classList.contains("dropdown_parks")) {
-        const selectedPark = changeEvent.target.value
+export const getParks = () => { 
+    console.log ("these are my parks")
+return fetch ('https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=e7nUtP2jRRovkoLURmKzkGQAqyIbCktiHsgdj9Yx', {
+  method: "GET",
+  headers: {"Accept": "application/json"
+}
+})
+  .then(response => response.json())
+  .then(parsedParks => {
+    console.log("**** I am 100% sure that I have he data ****")
+    parks = parsedParks.slice()
+})
 
-        const message = new CustomEvent("parkSelected", { 
-            detail: {
-                park: selectedPark
-            }})
-            eventHub.dispatchEvent(message)
-    }
-    })
-
-    const render = parkCollection => {
-        contentTarget.innerHTML = `
-        <select class="dropdown"> 
-        <option value="0">Please select a Park...</option>
-        ${parkCollection.data.map(
-            parks => `<option id="parkSelect">${parks.fullName}</option>`
-
-        )}
-
-        </select>
-        `
-                    
-    }
-
-    render(parks)
 }
 
-export default parkSelect
+
+let parks = []
+
+export const useParks = () => {
+return parks 
+}
+
+
+export const getParks = () => { 
+    console.log ("***I am fetching the parks***")
+return fetch ('https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=e7nUtP2jRRovkoLURmKzkGQAqyIbCktiHsgdj9Yx')
+  .then(response => response.json())
+  .then(
+      parsedParks => {
+
+    parks = parsedParks.slice()
+
+            }
+
+)
+
+}
+
+export default getParks 
