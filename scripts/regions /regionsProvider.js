@@ -46,7 +46,15 @@ export const getEateries = () => {
     console.log("I am fetching eateries")
 }
 
+export const getEateriesbyRegion = () => {
+    console.log("I am fetching eateries by region")
+}
+
 export const getAttractions = () => {
 
     console.log("I am fetching")
+}
+
+export const getAttractionsbyRegion = () => {
+    console.log("I am fetching attractions by region")
 }
