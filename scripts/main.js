@@ -1,6 +1,6 @@
-import { getParks } from "./parks/ParkProvider.js";
-import { parkSelect } from "./parks/parkSelect.js";
+import { getParks, useParks } from "./parks/ParkProvider.js"
+import ParkListComponent from "./parks/parkList.js"
 
 
 getParks().then(
-() => parkSelect())
+() => ParkListComponent())
