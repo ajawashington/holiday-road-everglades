@@ -2,8 +2,8 @@ import { useParkImages } from "./parkImages.js"
 
 const parkComponent = (park) => {
 
-    let parkImage = useParkImages.filter(obj => {
-        return obj === park
+    let parkImage = useParkImages().filter((obj) => {
+        return obj = `${park.fullName}`
     })
 
     console.log(parkImage)
