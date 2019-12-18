@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 import { keys } from "../Settings.js"
 
 
 
+=======
+>>>>>>> dbb5d3515c01ac52500f1311f784dbe72e29bf0c
 let parks = []
 
 export const useParks = () => parks
