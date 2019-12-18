@@ -1,14 +1,15 @@
-import { useParks } from "./ParkProvider.js"
+// import { useParks } from "./ParkProvider.js"
 import parkComponent from "./park.js"
+import { useRegionsInRegion } from "../regions/regionsProvider.js"
 
 const contentElement = document.querySelector(".parkContainer")
 
 const ParkListComponent = () => {
-    const parkCollection = useParks()
+    const parkCollection = useRegionsInRegion()
     contentElement.innerHTML += `
         <div class="parkList">
             ${
-                parkCollection.data.map(
+                parkCollection.map(
                     (currentPark) => {
                         return parkComponent(currentPark)
                     }
