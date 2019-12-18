@@ -10,19 +10,5 @@ regionSelect()
 useParks
 getParksbyRegion()
 selectedRegion ()
-<<<<<<< HEAD
-import { getParks, useParks } from "./parks/ParkProvider.js"
-import ParkListComponent from "./parks/parkList.js"
-import { getEateries } from "./eateries/EateryProvider.js"
-import EateryList from "./eateries/EateryList.js"
-
-
-=======
->>>>>>> master
 getParks().then(
 () => ParkListComponent())
-<<<<<<< HEAD
-getEateries()
-EateryList()
-=======
->>>>>>> master
