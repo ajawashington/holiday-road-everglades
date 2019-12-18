@@ -1,8 +1,4 @@
-
-
-import {
-    chooseRegion
-} from "./regionData.js"
+import {chooseRegion} from "./regionData.js"
 
 
 const eventHub = document.querySelector(".container")
