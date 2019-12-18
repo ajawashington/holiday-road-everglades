@@ -11,7 +11,6 @@ return fetch ('https://developer.nps.gov/api/v1/parks?api_key=e7nUtP2jRRovkoLURm
       parsedParks => {
 
     parks = parsedParks
-    console.log (parks)
 
             }
 
@@ -19,4 +18,4 @@ return fetch ('https://developer.nps.gov/api/v1/parks?api_key=e7nUtP2jRRovkoLURm
 
 }
 
-export default getParks 
+
