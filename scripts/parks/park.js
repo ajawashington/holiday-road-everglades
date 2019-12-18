@@ -1,9 +1,21 @@
 const parkComponent = (park) => {
-    return `<div class="park">
-    <div>
-        ${park.fullName}
+    return `
+    <section>
+    <div class="park">
+
+    <header class="parkHeader">
+     ${park.fullName}
+    </header>
+
+    <div> 
+   State: ${park.states}
     </div>
-    </div>`
+    <div>
+    Description: ${park.description}
+    </div>
+    </section>
+    `
+
 }
 
 export default parkComponent

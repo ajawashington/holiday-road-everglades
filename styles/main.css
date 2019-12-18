@@ -1,0 +1,14 @@
+.park {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: solid 4px purple;
+    text-align: center;
+    font-family: Optima;
+    padding: 10px;
+    margin: 10px;
+    background-color: peachpuff;
+    column-width: 10px;
+
+}
