@@ -11,9 +11,4 @@ useParks
 getParksbyRegion()
 selectedRegion ()
 getParks().then(
-<<<<<<< HEAD
-    () => parkSelect()
-)
-=======
 () => ParkListComponent())
->>>>>>> master
