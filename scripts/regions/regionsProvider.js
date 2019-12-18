@@ -1,3 +1,5 @@
+import ParkListComponent from "../parks/parkList.js"
+
 let parks = []
 let parksInRegion = []
 // let eateries = []
@@ -10,21 +12,6 @@ export const useRegions= () => {
     return parks
 }
 
-export const getRegions = () => {
-   
-    console.log("***I am fetching the parks***")
-    return fetch('https://developer.nps.gov/api/v1/parks?api_key=e7nUtP2jRRovkoLURmKzkGQAqyIbCktiHsgdj9Yx')
-        .then(response => response.json())
-        .then(
-            parsedParks => {
-
-            parks = parsedParks.data
-
-            }
-
-        )
-}
-
 export const getParksbyRegion = (states) => {
    
     console.log("***I am fetching the parks***")
@@ -33,11 +20,11 @@ export const getParksbyRegion = (states) => {
         .then(
             parsedParks => {
 
-        //    parksInRegion = parsedParks.data
-        console.log(parsedParks.data)
-
+           parksInRegion = parsedParks.data
+        // console.log(parsedParks.data)
+                    ParkListComponent()
             }
-
+            
         )
 }
 
