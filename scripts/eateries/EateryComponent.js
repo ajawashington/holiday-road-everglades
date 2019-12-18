@@ -6,14 +6,16 @@ const EateryComponent = (eateries) => {
         <ul>
           <span class="thumbnail">
             <li>${eateries.businessName}</li>
-            <span>
+          </span>
+
+          <dialog>
               <image class="info-pic-size" src="" alt="" />
               <br>
               <h4>${eateries.businessName}</h4>
               <h5>${eateries.city}, ${eateries.state}</h5>
               <p>${eateries.description}</p>
-            </span>
-          </span>
+            </dialog>
+            
         </ul>
       </section>
       </dialog>
