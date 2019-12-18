@@ -1,4 +1,5 @@
 const parkComponent = (park) => {
+    let parkName = park.fullName.split(" ").join("-")
     return `
     <section>
         <div class="park">
@@ -13,16 +14,19 @@ const parkComponent = (park) => {
         <div>
             Description: ${park.description}
         </div>
-        <button>
-            <dialog>
+        <input type="button" value="Details" id="${parkName}">
+            <dialog class="attractionsList">
                 <h3>Attractions</h3>
                     <ul>
-                        <li> ${bizzare}
+                        <li>"bizzarie"</li>
+                    </ul>
                 <h3>Eatery</h3>
                     <ul>
-                        <li> ${eatery.businessName}
-        </button>
+                        <li>"eatery name"</li>
+                    </ul>
+                <button id=closeDialog>
             </dialog>
+        </input>
     </section>
     `
 }
