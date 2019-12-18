@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 let parks = []
 
 export const useParks = () => parks
@@ -21,4 +19,3 @@ return fetch ('https://developer.nps.gov/api/v1/parks?api_key=e7nUtP2jRRovkoLURm
 }
 
 
->>>>>>> 9098ee4248ec5b33cbc7e5021e8b7a15794e634e
