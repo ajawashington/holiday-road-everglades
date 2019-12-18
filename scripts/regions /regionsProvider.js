@@ -3,14 +3,14 @@ let parksInRegion = []
 // let eateries = []
 // let attractions = []
 
-export const useParksInRegion = () => {
+export const useRegionsInRegion = () => {
     return parksInRegion
 }
-export const useParks= () => {
+export const useRegions= () => {
     return parks
 }
 
-export const getParks = () => {
+export const getRegions = () => {
    
     console.log("***I am fetching the parks***")
     return fetch('https://developer.nps.gov/api/v1/parks?api_key=e7nUtP2jRRovkoLURmKzkGQAqyIbCktiHsgdj9Yx')
@@ -56,5 +56,5 @@ export const getAttractions = () => {
 }
 
 export const getAttractionsbyRegion = () => {
-    console.log("I am fetching attractions by region")
+    console.log("I am fetching attractions")
 }
