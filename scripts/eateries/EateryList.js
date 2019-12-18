@@ -6,7 +6,7 @@ import { useEateries } from "./EateryProvider.js";
 console.log("****I am the Eatery List Module****");
 
 const eventHub = document.querySelector(".container");
-const contentElement = document.querySelector(".eateriesContainer")
+const contentElement = document.querySelector(".attractionsList_eateries")
 
 const EateryList = () => {
   
@@ -43,19 +43,19 @@ const EateryList = () => {
   render(eateryCollection)
 };
 
-eventHub.addEventListener("click", clickEvent => {
-  if (clickEvent.target.id.startsWith("eateries--")){
+// eventHub.addEventListener("click", clickEvent => {
+//   if (clickEvent.target.id.startsWith("eateries--")){
 
-    const eateryId = clickEvent.target.id
+//     const eateryId = clickEvent.target.id
 
-    const message = new CustomEvent("eateryButtonClicked", {
-      detail: {
-        eateryId: indexId
-      }
-    })
-    eventHub.dispatchEvent(message)
-  }
-}
-)
+//     const message = new CustomEvent("eateryButtonClicked", {
+//       detail: {
+//         eateryId: indexId
+//       }
+//     })
+//     eventHub.dispatchEvent(message)
+//   }
+// }
+// )
 
 export default EateryList
