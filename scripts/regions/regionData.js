@@ -1,19 +1,19 @@
 export const regions = [{
         region: "South",
-        states: "FL,AR,GA,LA",
+        states: "FL,TX,GA,SC,KY",
     },
     {
         region: "Northeast",
-        states: "CT,DC,NJ,PA",
+        states: "PA,NY,MA,WV,VA,DC,MD",
     },
     {
         region: "Midwest",
-        states: "IL,MO,OH,ND",
+        states: "ND,MN,NE,MO,IA,WI,OH,MI",
 
     },
     {
         region: "West",
-        states: "CA,AZ,MT,NV",
+        states: "NM,CA,UT,AZ,AK",
     }
 ]
 
