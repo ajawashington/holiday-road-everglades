@@ -1,30 +1,24 @@
 const parkComponent = (park) => {
-    let parkName = park.fullName.split(" ").join("-")
+    let parkState = park.states
     return `
     <section>
         <div class="park">
-
             <header class="parkHeader">
             ${park.fullName}
             </header>
-
         <div> 
             State: ${park.states}
         </div>
         <div>
             Description: ${park.description}
         </div>
-        <input type="button" value="Details" id="${parkName}">
-            <dialog class="attractionsList">
-                <h3>Attractions</h3>
-                    <ul>
-                        <li>"bizzarie"</li>
-                    </ul>
-                <h3>Eatery</h3>
-                    <ul>
-                        <li>"eatery name"</li>
-                    </ul>
-                <button id=closeDialog>
+        <input type="button" value="Details" id="${parkState}">
+            <dialog class="attractionList_attractions">
+                <h3>Bizzarie</h3>
+                        <div class="attractionList_bizzaries"></div>
+                <h3>Eateries</h3>
+                        <div class="attractionList_eateries"></div>
+                <input type="button" value="close" id="closeDialog">
             </dialog>
         </input>
     </section>
