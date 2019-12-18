@@ -1,22 +1,21 @@
 const parkComponent = (park) => {
+    return `
+    <section>
+    <div class="park">
 
-    let parkName = ${park.fullName}.split("").join("")
+    <header class="parkHeader">
+     ${park.fullName}
+    </header>
 
-    return `<div class="${parkName}">
-    <div>
-        ${park.fullName}
+    <div> 
+   State: ${park.states}
     </div>
-            <button> 
-                <dialog>
-                    <h3>Attractions</h3>
-                        <ul>
-                            <li> ${bizzarie}
-                    <h3>Eatery</h3>
-                        <ul>
-                            <li> ${eatery.businessName}
-            </button>
-        </dialog>
-    </div>`
+    <div>
+    Description: ${park.description}
+    </div>
+    </section>
+    `
+
 }
 
 export default parkComponent
