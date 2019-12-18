@@ -1,6 +1,6 @@
 const parkComponent = (park) => {
 
-    let parkName = ${park.fullName}.split(" ").join("-")
+    let parkName = ${park.fullName}.split("").join("")
 
     return `<div class="${parkName}">
     <div>
