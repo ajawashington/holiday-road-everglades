@@ -1,4 +1,11 @@
+import { useParkImages } from "./parkImages.js"
+
 const parkComponent = (park) => {
+
+    console.log(useParkImages.filter(obj => {
+        return obj === park
+    }))
+
     let parkState = park.states
     return `
     <section>
