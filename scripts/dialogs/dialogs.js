@@ -1,5 +1,5 @@
 const InitializeBtns = () => {
-  const allCloseBtns = document.querySelectorAll("closeDialog");
+  const allCloseBtns = document.querySelectorAll("button[id^='close--']");
   allCloseBtns.forEach(btn => {
     btn.addEventListener("click", event => {
       console.log("*****The Button Is Firing")
@@ -8,7 +8,7 @@ const InitializeBtns = () => {
     });
   });
 
-  const allOpenBtns = document.querySelectorAll("${parkState}");
+  const allOpenBtns = document.querySelectorAll("button[id^='open--']");
   allOpenBtns.forEach(btn => {
     btn.addEventListener("click", event => {
       const dialogElement = document.querySelector(
