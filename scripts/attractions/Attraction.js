@@ -8,7 +8,7 @@ export const AttractionComponent = (attraction) => {
         <h5>Location: ${attraction.city}, ${attraction.state}</h5>
     </div>
     
-    <dialog> 
+    <dialog id="dialog"> 
     
         <div>Name: ${attraction.name}</div>
         <div>Location: ${attraction.city}, ${attraction.state}</div>
