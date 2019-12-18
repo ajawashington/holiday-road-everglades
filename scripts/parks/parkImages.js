@@ -1,3 +1,7 @@
+export const useParkImages = () => {
+    return parkImages
+}
+
 const parkImages = [
     {
         parkName: "African American Civil War Memorial",
