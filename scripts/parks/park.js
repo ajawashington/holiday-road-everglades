@@ -15,6 +15,7 @@ const parkComponent = (park) => {
             Description: ${park.description}
         </div>
         <input type="button" value="Details" id="${parkName}">
+        <input type="button" value="Add to Itinerary">
             <dialog class="attractionsList">
                 <h3>Attractions</h3>
                     <ul>

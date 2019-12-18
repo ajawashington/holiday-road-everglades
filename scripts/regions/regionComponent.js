@@ -9,7 +9,7 @@ export const selectedRegion = () => {
 
         eventHub.addEventListener("change", clickEvent => {
 
-            if (clickEvent.target.id.startsWith("reg--")) {
+            if (clickEvent.target.checked) {
                 const region = clickEvent.target.value
 
                 const message = new CustomEvent("regionSelected", {
@@ -21,14 +21,23 @@ export const selectedRegion = () => {
             }
         })
 
+        eventHub.addEventListener("click", changeEvent => { 
+            if (changeEvent.target.checked=== false){ console.log("getClicked")
+                document.querySelector(".parkList").innerHTML=""
+            }
+
+        })
+
         const renderCheckboxes = () => {
 
             contentTarget.innerHTML = `
-            <p>Choose A Region</p>
+            <p id="header" >CHOOSE A REGION</p>
+            <div id="regionDiv">
             <input type="checkbox" name="region" id="reg--South" value="South" />South
             <input type="checkbox" name="region" id="reg--Northeast" value="Northeast" />Northeast
             <input type="checkbox" name="region" id="reg--Midwest" value="Midwest" />Midwest
             <input type="checkbox" name="region" id="reg--West" value="West">West
+            </div>
             
                 `
         }

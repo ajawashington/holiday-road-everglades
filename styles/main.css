@@ -1,3 +1,7 @@
+body{ 
+
+}
+
 .park {
 
     display: flex;
@@ -11,4 +15,22 @@
     background-color: peachpuff;
     column-width: 10px;
 
+}
+
+#header{
+    text-align: center;
+    font-family: Optima;
+    color: peru;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#regionDiv {
+    border: solid 4px rebeccapurple;
+    text-align: center;
+    font-family: Optima;
+    color: rebeccapurple;
+    background-color: peachpuff;
+    font-size: 20px;
+    font-weight: bold;
 }
