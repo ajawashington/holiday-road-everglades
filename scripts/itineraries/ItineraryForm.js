@@ -48,7 +48,7 @@ const ItineraryFormComponent = () => {
                 </div>
 
                 <button class="itinerary__field" id="saveItinerary">Save Itinerary</button>
-                // <button class="itinerary__field" id="showItineraries">Show Itineraries</button>
+                 <button class="itinerary__field" id="showItineraries">Show Itineraries</button>
             </details>
         `
     }
