@@ -1,4 +1,4 @@
-console.log("****Eateries Provider module code****")
+// console.log("****Eateries Provider module code****")
 
 let eateries = []
 
@@ -8,16 +8,16 @@ export const useEateries = () => {
 
 export const getEateries = () => {
   
-  console.log("****I am going to get the eateries data****")
+//   console.log("****I am going to get the eateries data****")
 
     return fetch("http://holidayroad.nss.team/eateries")
         .then(response => response.json())
         .then(
 
             parsedEateries => {
-                console.table(parsedEateries)
+                // console.table(parsedEateries)
 
-                console.log("****I have the eateries data****")
+                // console.log("****I have the eateries data****")
                 eateries = parsedEateries.slice()
 
             }

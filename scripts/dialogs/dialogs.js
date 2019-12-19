@@ -1,30 +1,40 @@
-const InitializeBtns = () => {
-  const allCloseBtns = document.querySelectorAll("button[id^='close--']");
-  allCloseBtns.forEach(btn => {
-    btn.addEventListener("click", event => {
-      console.log("*****The Button Is Firing")
+import { useEateries } from "../eateries/EateryProvider.js";
+
+
+const eventHub = document.querySelector(".container");
+const contentTarget = document.querySelector(".attractionList_eateries")
+
+const ParkDialogComponent = () => {
+  eventHub.addEventListener("click", event => {
+    if(event.target.id.startsWith("open--")){
+      const eateries = useEateries()
+      const foundEatery = eateries.find(
+        (singleEatery) => {
+          return singleEatery.state === event.target.id.split("--")[1]
+        }
+      )
+     
+      const dialogSiblingSelector = `#${event.target.id}+dialog`;
+      console.log(dialogSiblingSelector)
+      const theDialog = document.querySelector(dialogSiblingSelector);
+      theDialog.showModal();
+
+
+      const eateryHTML = `
+             <div>
+               ${foundEatery.businessName}
+               ${foundEatery.city}, ${foundEatery.state}
+               ${foundEatery.description}
+             </div>
+           `
+       document.querySelector(".attractionList_attractions").innerHTML = eateryHTML
+       console.log(eateryHTML)
+    }
+
+    if(event.target.id.startsWith("close--")) {
       const dialogElement = event.target.parentNode;
       dialogElement.close();
-    });
-  });
-
-  const allOpenBtns = document.querySelectorAll("button[id^='open--']");
-  allOpenBtns.forEach(btn => {
-    btn.addEventListener("click", event => {
-      const dialogElement = document.querySelector(
-        `#${event.target.id} + dialog`
-      );
-      dialogElement.showModal();
-    });
-  });
-
-  const popUp = document.querySelectorAll(".popUp");
-  popUp.forEach(pop => {
-    pop.addEventListener("click", event => {
-      const dialogElement = event;
-      dialogElement.showModal();
-    });
-  });
-};
-
-export default InitializeBtns;
+    }
+  }) 
+}
+export default ParkDialogComponent
