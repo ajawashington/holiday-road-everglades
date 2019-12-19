@@ -2,7 +2,7 @@ import { useEateries } from "../eateries/EateryProvider.js";
 
 
 const eventHub = document.querySelector(".container");
-const contentTarget = document.querySelector(".attractionList_eateries")
+const contentTarget = document.querySelector(".attractionList_eateries_${parkState}")
 
 const ParkDialogComponent = () => {
   eventHub.addEventListener("click", event => {
@@ -27,7 +27,7 @@ const ParkDialogComponent = () => {
                ${foundEatery.description}
              </div>
            `
-       document.querySelector(".attractionList_attractions").innerHTML = eateryHTML
+       document.querySelector(".attractionList_attractions_${parkState}").innerHTML = eateryHTML
        console.log(eateryHTML)
     }
 
