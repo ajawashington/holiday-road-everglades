@@ -1,5 +1,15 @@
-body{ 
-
+body:after{ 
+content: "";
+background-image: url("https://images.squarespace-cdn.com/content/v1/5207c8b6e4b0bdc260082535/1574204402280-JXCIR8XJF7UQCMZPQP7B/ke17ZwdGBToddI8pDm48kHv-yn8lgTJNztOd5CAgezd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfVl_pdFW593rYfrtBzB0INU-YZ6al36AY853_SrVAEIVbiMLJcs--91HbzuLKZi3w/Quilotoa+things+to+do+in+ecuador+vacation.jpg");
+background-size: 100% 100%;
+overflow: hidden;
+opacity: 0.3;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+z-index: -1;   
 }
 
 .park {
@@ -7,30 +17,36 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: solid 4px purple;
+    border: solid 4px rgb(223, 148, 223);
     text-align: center;
     font-family: Optima;
     padding: 10px;
     margin: 10px;
-    background-color: peachpuff;
+    background-color: papayawhip;
     column-width: 10px;
-
 }
-
+#head {
+    text-align: center;
+    font-family: Optima;
+    font-size: 40px;
+}
+#viewItin{ 
+    text-align: right;
+}
 #header{
     text-align: center;
     font-family: Optima;
-    color: peru;
+    color: rgb(45, 143, 156);
     font-weight: bold;
     font-size: 30px;
 }
 
 #regionDiv {
-    border: solid 4px rebeccapurple;
+    border: solid 4px peru;
     text-align: center;
     font-family: Optima;
-    color: rebeccapurple;
-    background-color: peachpuff;
+    color: papayawhip;
+    background-color: peru;
     font-size: 20px;
     font-weight: bold;
 }

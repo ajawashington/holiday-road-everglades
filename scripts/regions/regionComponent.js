@@ -21,9 +21,9 @@ export const selectedRegion = () => {
             }
         })
 
-        eventHub.addEventListener("click", changeEvent => { 
-            if (changeEvent.target.unchecked){ console.log("getClicked")
-                document.querySelector(".parkList").innerHTML=""
+        eventHub.addEventListener("uncheck", clickEvent => { 
+            if (clickEvent.target.unchecked){ console.log("getClicked")
+                document.querySelector(".park").innerHTML=""
             }
 
         })
@@ -31,7 +31,9 @@ export const selectedRegion = () => {
         const renderCheckboxes = () => {
 
             contentTarget.innerHTML = `
-            <p id="header" >CHOOSE A REGION</p>
+            <h1 id="head"> PLAN YOUR TRIP HERE!</h2>
+           <div id="header" >CHOOSE A REGION</div><div><input type="button" id="viewItin" value="View Saved Itineraries"></div>
+            <br>
             <div id="regionDiv">
             <input type="checkbox" name="region" id="reg--South" value="South" />South
             <input type="checkbox" name="region" id="reg--Northeast" value="Northeast" />Northeast
