@@ -2,7 +2,191 @@ export const useParkImages = () => {
     return parkImages
 }
 
-const parkImages = [  
+const parkImages = [
+    {
+        parkName: "Adams National Historical Park",
+        parkImage: "https://www.nps.gov/adam/planyourvisit/images/17-Old-House-and-garden.JPG?maxwidth=1200&autorotate=false"
+    },
+    {
+        parkName: "Allegheny Portage Railroad National Historic Site",
+        parkImage: "https://www.nps.gov/common/uploads/grid_builder/alpo/crop16_9/89F7F51F-1DD8-B71B-0BE46B5A499CC2C8.JPG?width=950&quality=90&mode=crop"
+    },
+    {
+        parkName: "Anacostia Park",
+        parkImage: "https://www.nps.gov/common/uploads/grid_builder/anac/crop1_1/CF7037C6-1DD8-B71B-0B24FB93F5675382.jpg?width=640&quality=90&mode=crop"
+    },
+    {
+        parkName: "Antietam National Battlefield",
+        parkImage: "https://www.nps.gov/anti/planyourvisit/images/sunset.jpg?maxwidth=650&autorotate=false"
+    },
+    {
+        parkName: "Assateague Island National Seashore",
+        parkImage: "https://www.chincoteaguechamber.com/wp-content/uploads/2018/02/katie-lederer-2016-07-24.jpg"
+    },
+    {
+        parkName: "Baltimore National Heritage Area",
+        parkImage: "https://www.nps.gov/thingstodo/images/Baltimore_Power_Plant.jpg?width=950&quality=90&mode=crop"
+    },
+    {
+        parkName: "Blue Ridge Parkway",
+        parkImage: "https://www.romanticasheville.com/sites/default/files/u13/blue-ridge-parkway-rough-ridge.jpg"
+    },
+    {
+        parkName: "Boston African American National Historic Site",
+        parkImage: "https://www.nps.gov/common/uploads/places/images/nri/20130826/siteadmin/5CD344FC-BE8B-6D83-25F757F91F55B00E/5CD344FC-BE8B-6D83-25F757F91F55B00E.jpg"
+    },
+    {
+        parkName: "Capitol Hill Parks",
+        parkImage: "https://i.pinimg.com/originals/f0/1a/87/f01a871dd72987a8d8a201067fb18035.jpg"
+    },
+    {
+        parkName: "Castle Clinton National Monument",
+        parkImage: ""
+    },
+    {
+        parkName: "Chesapeake Bay",
+        parkImage: ""
+    },
+    {
+        parkName: "Cumberland Gap National Historical Park",
+        parkImage: ""
+    },
+    {
+        parkName: "Erie Canalway National Heritage Corridor",
+        parkImage: ""
+    },
+    {
+        parkName: "Fort Monroe National Monument",
+        parkImage: ""
+    },
+    {
+        parkName: "Fort Monroe National Monument",
+        parkImage: ""
+    },
+    {
+        parkName: "Harriet Tubman Underground Railroad National Historical Park",
+        parkImage: ""
+    },
+    {
+        parkName: "Hopewell Furnace National Historic Site",
+        parkImage: ""
+    },
+    {
+        parkName: "Kenilworth Park & Aquatic Gardens",
+        parkImage: ""
+    },
+    {
+        parkName: "Lewis & Clark National Historic Trail",
+        parkImage: ""
+    },
+    {
+        parkName: "Mary McLeod Bethune Council House National Historic Site",
+        parkImage: ""
+    },
+    {
+        parkName: "Minute Man National Historical Park",
+        parkImage: ""
+    },
+    {
+        parkName: "National Parks of New York Harbor",
+        parkImage: ""
+    },
+    {
+        parkName: "Pennsylvania Avenue",
+        parkImage: ""
+    },
+    {
+        parkName: "The Last Green Valley National Heritage Corridor",
+        parkImage: ""
+    },
+    {
+        parkName: "Theodore Roosevelt Inaugural National Historic Site",
+        parkImage: ""
+    },
+    {
+        parkName: "Upper Delaware Scenic & Recreational River",
+        parkImage: ""
+    },
+    {
+        parkName: "Valley Forge National Historical Park",
+        parkImage: ""
+    },
+    {
+        parkName: "Wolf Trap National Park for the Performing Arts",
+        parkImage: ""
+    },
+    {
+        parkName: "Alibates Flint Quarries National Monument",
+        parkImage: ""
+    },
+    {
+        parkName: "Amistad National Recreation Area",
+        parkImage: ""
+    },
+    {
+        parkName: "Andersonville National Historic Site",
+        parkImage: ""
+    },
+    {
+        parkName: "Appalachian National Scenic Trail",
+        parkImage: ""
+    },
+    {
+        parkName: "Arabia Mountain National Heritage Area",
+        parkImage: ""
+    },
+    {
+        parkName: "Big Bend National Park",
+        parkImage: ""
+    },
+    {
+        parkName: "Big Thicket National Preserve",
+        parkImage: ""
+    },
+    {
+        parkName: "Biscayne National Park",
+        parkImage: ""
+    },
+    {
+        parkName: "Canaveral National Seashore",
+        parkImage: ""
+    },
+    {
+        parkName: "Castillo de San Marcos National Monument",
+        parkImage: ""
+    },
+    {
+        parkName: "Chamizal National Memorial",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
+    {
+        parkName: "",
+        parkImage: ""
+    },
     {
         parkName: "Abraham Lincoln Birthplace National Historical Park",
         parkImage: "https://www.nps.gov/common/uploads/grid_builder/abli/crop16_9/21563B40-9CE1-D92D-E97524B1FF409F4B.jpg?width=950&quality=90&mode=crop"
