@@ -2,19 +2,31 @@ import { useParkImages } from "./parkImages.js"
 
 const parkComponent = (park) => {
 
-    let parkImage = useParkImages().filter((obj) => {
-        return obj = `${park.fullName}`
-    })
+    const parkImages = useParkImages()
 
-    console.log(parkImage)
+    const parkName = park.fullName
+
+    const parkImageFunction = (currentPark) => {
+        return parkImages.find((obj) => {
+            return obj.parkName === currentPark
+        })
+    }
+
+    const currentParkImage = parkImageFunction(parkName)
+
+    // console.log(currentParkImage)
 
     let parkState = park.states
+
     return `
     <section>
-        <div class="park">
+        <div class="park">  
             <header class="parkHeader">
             ${park.fullName}
             </header>
+            <div>
+                <img src="${currentParkImage.parkImage}">
+            </div>
         <div> 
             State: ${park.states}
         </div>
@@ -22,11 +34,11 @@ const parkComponent = (park) => {
             Description: ${park.description}
         </div>
         <input type="button" value="Details" id="open--${parkState}">
-            <dialog class="attractionList_attractions">
+            <dialog class="attractionList_attractions_${parkState}">
                 <h3>Bizzarie</h3>
-                        <div class="attractionList_bizzaries"></div>
+                        <div class="attractionList_bizzaries_${parkState}"></div>
                 <h3>Eateries</h3>
-                        <div class="attractionList_eateries"></div>
+                        <div class="attractionList_eateries_${parkState}"></div>
                 <input type="button" value="close" id="close--${parkState}">
             </dialog>
         </input>
@@ -35,3 +47,4 @@ const parkComponent = (park) => {
 }
 
 export default parkComponent
+
