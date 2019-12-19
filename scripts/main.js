@@ -7,12 +7,12 @@ import { AttractionListComponent } from "./attractions/AttractionList.js";
 
 
 
-getAttractions().then( 
-    () => 
-    AttractionListComponent()
+// getAttractions().then( 
+//     () => 
+//     AttractionListComponent()
     
-)
-getItineraries()
+// )
+// getItineraries()
 selectedRegion()
 useRegions()
 regionSelect()
