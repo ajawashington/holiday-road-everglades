@@ -22,7 +22,7 @@ export const selectedRegion = () => {
         })
 
         eventHub.addEventListener("click", changeEvent => { 
-            if (changeEvent.target.checked=== false){ console.log("getClicked")
+            if (changeEvent.target.unchecked){ console.log("getClicked")
                 document.querySelector(".parkList").innerHTML=""
             }
 
