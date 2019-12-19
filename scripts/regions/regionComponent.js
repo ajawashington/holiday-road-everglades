@@ -31,8 +31,10 @@ export const selectedRegion = () => {
         const renderCheckboxes = () => {
 
             contentTarget.innerHTML = `
+            
             <h1 id="head"> PLAN YOUR TRIP HERE!</h2>
-           <div id="header" >CHOOSE A REGION</div><div><input type="button" id="viewItin" value="View Saved Itineraries"></div>
+           <div id="header" >CHOOSE A REGION</div>
+           <div><input type="button" id="showItinerary" value="View Saved Itineraries"></div>
             <br>
             <div id="regionDiv">
             <input type="checkbox" name="region" id="reg--South" value="South" />South

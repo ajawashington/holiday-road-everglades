@@ -1,8 +1,10 @@
 {
 	"itineraries": [
-		park: "Yellowstone",
-		bizarie: "McCloud's BBQ",
-		eatery: "Rubberband",
-		id: "1"
+	{
+		"park": "Yellowstone",
+		"bizarie": "McCloud's BBQ",
+		"eatery": "Rubberband",
+		"id": 1
+	}
 	]
 }

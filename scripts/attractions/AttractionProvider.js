@@ -1,3 +1,4 @@
+import { AttractionComponent } from "./Attraction.js"
 
 
 let attractions = []

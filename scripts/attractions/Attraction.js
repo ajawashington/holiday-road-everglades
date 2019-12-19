@@ -8,7 +8,7 @@ export const AttractionComponent = (attraction) => {
         <h5>Location: ${attraction.city}, ${attraction.state}</h5>
     </div>
     
-    <dialog id="dialog"> 
+    <dialog id="dialog--${attraction.id}> 
     
         <div>Name: ${attraction.name}</div>
         <div>Location: ${attraction.city}, ${attraction.state}</div>
@@ -35,7 +35,7 @@ eventHub.addEventListener("mouseover", theMouseOverEvent => {
     }
 })
 eventHub.addEventListener("mouseout", theMouseOutEvent => {
-        if (theMouseOutEvent.target.id.startsWith("attraction--")) {
+        if (theMouseOutEvent.target.id.startsWith("dialog--")) {
             const dialogSibilingSelection = `#${theMouseOutEvent.target.id}+dialog`;
             const hideDialog = document.querySelector(dialogSibilingSelection)
             hideDialog.close();

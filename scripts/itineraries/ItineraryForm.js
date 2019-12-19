@@ -10,6 +10,7 @@ const ItineraryFormComponent = () => {
     eventHub.addEventListener("click", clickEvent => {
         if (clickEvent.target.id === "saveItinerary") {
             // Make an object
+console.log("the button was clicked")
             const newItinerary = {
                 park: document.querySelector("#itinerary-park").value,
                 bizarie: document.querySelector("#itinerary-bizarie").value,
@@ -32,11 +33,13 @@ const ItineraryFormComponent = () => {
             eventHub.dispatchEvent(message)
         }
     })
+console.log("show it button was clicked")
+//This below seems to be where you would fill in Itinerary-Preview, I'm, not sure that we'd need this.  I need a itinerary preview section where these can be intered with a button preview itiernaryr rather than an input field
 
-    const render = () => {
+const render = () => {
         contentTarget.innerHTML = `
             <details>
-                <summary>Itinerary</summary>
+                <summary>Itinerary </summary>
                 <div class="itinerary__field">
                     Park: <input type="text" id="itinerary-park" />
                 </div>
@@ -48,12 +51,12 @@ const ItineraryFormComponent = () => {
                 </div>
 
                 <button class="itinerary__field" id="saveItinerary">Save Itinerary</button>
-                 <button class="itinerary__field" id="showItineraries">Show Itineraries</button>
+                <button class="itinerary__field" id="showItineraries">Show Itineraries</button>
             </details>
         `
     }
 
     render()
-}
+ }
 
 export default ItineraryFormComponent
