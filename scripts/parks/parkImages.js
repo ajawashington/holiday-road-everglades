@@ -2,7 +2,11 @@ export const useParkImages = () => {
     return parkImages
 }
 
-const parkImages = [
+const parkImages = [  
+    {
+        parkName: "Abraham Lincoln Birthplace National Historical Park",
+        parkImage: "https://www.nps.gov/common/uploads/grid_builder/abli/crop16_9/21563B40-9CE1-D92D-E97524B1FF409F4B.jpg?width=950&quality=90&mode=crop"
+    },
     {
         parkName: "African American Civil War Memorial",
         parkImage: "https://washington-org.s3.amazonaws.com/s3fs-public/image-african_american_civil_war_memorial_public_domain-10932.jpg"

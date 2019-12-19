@@ -2,19 +2,31 @@ import { useParkImages } from "./parkImages.js"
 
 const parkComponent = (park) => {
 
-    let parkImage = useParkImages().filter((obj) => {
-        return obj = `${park.fullName}`
-    })
+    const parkImages = useParkImages()
 
-    console.log(parkImage)
+    const parkName = park.fullName
+
+    const parkImageFunction = (currentPark) => {
+        return parkImages.filter((obj) => {
+        if (obj.parkName === currentPark)
+        return obj.parkImage
+    })}
+
+    const currentParkImage = parkImageFunction(parkName)
+
+    console.log(currentParkImage)
 
     let parkState = park.states
+    
     return `
     <section>
-        <div class="park">
+        <div class="park">  
             <header class="parkHeader">
             ${park.fullName}
             </header>
+            <div>
+                ${currentParkImage}
+            </div>
         <div> 
             State: ${park.states}
         </div>
@@ -35,3 +47,4 @@ const parkComponent = (park) => {
 }
 
 export default parkComponent
+
