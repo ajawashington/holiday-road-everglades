@@ -25,7 +25,7 @@ const parkComponent = (park) => {
             ${park.fullName}
             </header>
             <div>
-                ${currentParkImage}
+                <img src="${currentParkImage}">
             </div>
         <div> 
             State: ${park.states}
