@@ -1,4 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
+let parks = []
+=======
 // let parks = []
+>>>>>>> 0decc769a8113c261060208ff6d866a6a5da9a6a
 
 // export const useParks = () => parks
 
