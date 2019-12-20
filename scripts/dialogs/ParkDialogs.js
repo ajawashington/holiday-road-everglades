@@ -42,9 +42,9 @@ const ParkDialogComponent = () => {
 
        const bizzarieHTML = `
        <div>
-         <h4>${foundBizzarie.name}</h4>
-         <h5>${foundBizzarie.city}, ${foundBizzarie.state}</h5>
-         <p>${foundBizzarie.description}</p>
+         <h4 class="dialogMargin">${foundBizzarie.name}</h4>
+         <h5 class="dialogMargin">${foundBizzarie.city}, ${foundBizzarie.state}</h5>
+         <p class="dialogMargin">${foundBizzarie.description}</p>
        </div>
      `
       document.querySelector(`.attractionList_bizzaries_${code}`).innerHTML = bizzarieHTML
