@@ -57,3 +57,7 @@ position: absolute;
     font-size: 20px;
     font-weight: bold;
 }
+
+.dialogMargin {
+    margin: 5px;
+}

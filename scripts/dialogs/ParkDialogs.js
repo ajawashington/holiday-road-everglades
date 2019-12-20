@@ -20,9 +20,9 @@ const ParkDialogComponent = () => {
 
       const eateryHTML = `
         <div>
-          <strong>${foundEatery.businessName}</strong>
-          ${foundEatery.city}, ${foundEatery.state}
-          ${foundEatery.description}
+          <h4 class="dialogMargin">${foundEatery.businessName}</h4>
+          <h5 class="dialogMargin">${foundEatery.city}, ${foundEatery.state}</h5>
+          <p class="dialogMargin">${foundEatery.description}</p>
         </div>
       `
        document.querySelector(`.attractionList_eateries_${code}`).innerHTML = eateryHTML
