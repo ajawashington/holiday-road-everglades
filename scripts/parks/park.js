@@ -27,12 +27,12 @@ const parkComponent = (park) => {
             <div>
                 <img src="${currentParkImage.parkImage}">
             </div>
-        <div> 
+        <h3> 
             State: ${park.states}
-        </div>
-        <div>
+        </h3>
+        <h4>
             Description: ${park.description}
-        </div>
+        </h4>
         <input type="button" value="Details" id="open--${parkState}">
             <dialog class="attractionList_attractions_${parkState}">
                 <h2>Bizzarie</h2>
