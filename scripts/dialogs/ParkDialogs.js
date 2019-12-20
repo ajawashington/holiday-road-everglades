@@ -3,8 +3,6 @@ import { useAttractions } from "../attractions/AttractionProvider.js";
 
 
 
-// Need to figure out how to query select the div in park.js using the interpolated string for each state, on each button; current method is not working
-
 const eventHub = document.querySelector(".container");
 
 const ParkDialogComponent = () => {
@@ -32,9 +30,9 @@ const ParkDialogComponent = () => {
 
       const eateryHTML = `
         <div>
-          <strong>${foundEatery.businessName}</strong>
-          ${foundEatery.city}, ${foundEatery.state}
-          ${foundEatery.description}
+          <h4 class="dialogMargin">${foundEatery.businessName}</h4>
+          <h5 class="dialogMargin">${foundEatery.city}, ${foundEatery.state}</h5>
+          <p class="dialogMargin">${foundEatery.description}</p>
         </div>
       `
        document.querySelector(`.attractionList_eateries_${code}`).innerHTML = eateryHTML
