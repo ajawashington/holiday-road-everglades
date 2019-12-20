@@ -160,8 +160,8 @@ const parkImages = [
         parkImage: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cannon_Row.jpg"
     },
     {
-        parkName: "",
-        parkImage: ""
+        parkName: "Canyonlands National Park",
+        parkImage: "https://www.discovermoab.com/wp-content/uploads/2017/06/canyonlands_main_image.jpg"
     },
     {
         parkName: "",
