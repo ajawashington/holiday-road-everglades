@@ -1,4 +1,7 @@
 import { useEateries } from "../eateries/EateryProvider.js";
+import { useAttractions } from "../attractions/AttractionProvider.js";
+
+
 
 const eventHub = document.querySelector(".container");
 
@@ -14,6 +17,13 @@ const ParkDialogComponent = () => {
           return singleEatery.state === event.target.id.split("--")[1]
         }
       )
+
+      const bizzarie = useAttractions()
+      const foundBizzarie = bizzarie.find(
+        (singleBizzarie) => {
+          return singleBizzarie.state === event.target.id.split("--")[1]
+        }
+      )
      
       theDialog.showModal();
 
@@ -27,6 +37,18 @@ const ParkDialogComponent = () => {
       `
        document.querySelector(`.attractionList_eateries_${code}`).innerHTML = eateryHTML
        console.log(eateryHTML)
+
+       const bizzarieHTML = `
+       <div>
+         <h4 class="dialogMargin">${foundBizzarie.name}</h4>
+         <h5 class="dialogMargin">${foundBizzarie.city}, ${foundBizzarie.state}</h5>
+         <p class="dialogMargin">${foundBizzarie.description}</p>
+       </div>
+     `
+      document.querySelector(`.attractionList_bizzaries_${code}`).innerHTML = bizzarieHTML
+      console.log(bizzarieHTML)
+  
+       
     }
 
     if(event.target.id.startsWith("close--")) {
