@@ -16,7 +16,7 @@ const parkComponent = (park) => {
 
     // console.log(currentParkImage)
 
-    let parkState = park.states
+    const parkState = park.states
 
     return `
     <section>
