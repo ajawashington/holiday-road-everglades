@@ -48,7 +48,7 @@ export const selectedRegion = () => {
             <input type="checkbox" name="region" id="reg--Midwest" value="Midwest"/>Midwest
             <input type="checkbox" name="region" id="reg--West" value="West">West
             <br>
-            <input type="button" value="View Saved Itineraries"/>
+            <input type="button" id="showItinerary" value="View Saved Itineraries"/>
             </div>
             
                 `
