@@ -41,135 +41,127 @@ const parkImages = [
     },
     {
         parkName: "Castle Clinton National Monument",
-        parkImage: ""
+        parkImage: "https://untappedcities-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/castle-clinton-battery-nyc-untapped-cities1.jpg"
     },
     {
         parkName: "Chesapeake Bay",
-        parkImage: ""
+        parkImage: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_338,q_75,w_600/v1/clients/virginiabeachva/144_3_3064_jpeg_6745e54d-73b7-4612-83a0-c0d2c4bf284c.jpg"
     },
     {
         parkName: "Cumberland Gap National Historical Park",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/cuga/learn/news/images/Alan-Meadow-s-Pinnacle-Overlook-960.png"
     },
     {
         parkName: "Erie Canalway National Heritage Corridor",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/common/uploads/place/nri/20170821/places/42F110FD-1DD8-B71B-0BBF8CAE35A66F6F/42F110FD-1DD8-B71B-0BBF8CAE35A66F6F.jpg"
     },
     {
         parkName: "Fort Monroe National Monument",
-        parkImage: ""
-    },
-    {
-        parkName: "Fort Monroe National Monument",
-        parkImage: ""
-    },
-    {
-        parkName: "Harriet Tubman Underground Railroad National Historical Park",
-        parkImage: ""
+        parkImage: "https://www.dailypress.com/resizer/9TJ2vbhkTaqqdWZR1VAZEQQKno8=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/QSH6W445VZFEJNDDRVKWCN2K5A.jpg"
     },
     {
         parkName: "Hopewell Furnace National Historic Site",
-        parkImage: ""
+        parkImage: "https://visitpaamericana.com/wp-content/uploads/2016/08/hopewell-furnace-national-historic-site.jpg"
     },
     {
         parkName: "Kenilworth Park & Aquatic Gardens",
-        parkImage: ""
+        parkImage: "http://www.xinhuanet.com/english/2019-07/04/138197077_15621974186921n.jpg"
     },
     {
         parkName: "Lewis & Clark National Historic Trail",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/common/uploads/grid_builder/lecl/crop16_9/5A97EE80-1DD8-B71B-0B74C9641C898E41.jpg?width=950&quality=90&mode=crop"
     },
     {
         parkName: "Mary McLeod Bethune Council House National Historic Site",
-        parkImage: ""
+        parkImage: "https://npplan.com/wp-content/uploads/2016/10/Bethune-NPPSMARKOS-001.jpg"
     },
     {
         parkName: "Minute Man National Historical Park",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/mima/learn/news/images/North-Bridge-Battle-Commemoration-Patriots-Day_NPS.jpg"
     },
     {
         parkName: "National Parks of New York Harbor",
-        parkImage: ""
+        parkImage: "https://nyharborparks.org/wp-content/uploads/2017/12/nyh-slide-ferry-view-new-york-harbor.jpg"
     },
     {
         parkName: "Pennsylvania Avenue",
-        parkImage: ""
+        parkImage: "https://upload.wikimedia.org/wikipedia/commons/6/65/Capital_from_14_and_penn.JPG"
     },
     {
         parkName: "The Last Green Valley National Heritage Corridor",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/common/uploads/grid_builder/qush/crop16_9/76FCD872-1DD8-B71B-0B3067681A42674E.jpg?width=950&quality=90&mode=crop"
     },
     {
         parkName: "Theodore Roosevelt Inaugural National Historic Site",
-        parkImage: ""
+        parkImage: "https://media-cdn.tripadvisor.com/media/photo-s/0c/3b/aa/9e/front-from-street-near.jpg"
     },
     {
         parkName: "Upper Delaware Scenic & Recreational River",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/common/uploads/grid_builder/upde/crop16_9/951EFECC-1DD8-B71B-0BEC1CD377B2E1A3.jpg?width=307&quality=90&mode=crop"
     },
     {
         parkName: "Valley Forge National Historical Park",
-        parkImage: ""
+        parkImage: "https://www.nps.gov/articles/images/14268426873_979736faec_o_garen_Meguerian_cabinsandsunraysatvalleyforge_1_cms.jpg?maxwidth=1200&maxheight=1200&autorotate=false"
     },
     {
         parkName: "Wolf Trap National Park for the Performing Arts",
-        parkImage: ""
+        parkImage: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_360,q_50,w_640/v1/clients/fairfax/3CB26E641FFAD07887E5EF1CB1EE6E98_d1bb49b1-3015-42ec-b7fc-73495ecf6997.jpg"
     },
     {
         parkName: "Alibates Flint Quarries National Monument",
-        parkImage: ""
+        parkImage: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Alfl_alibates_20060726164737.jpg"
+    },
+     {
+         parkName: "Amistad National Recreation Area",
+         parkImage: "https://www.nps.gov/common/uploads/grid_builder/amis/crop16_9/4F7EA0D2-1DD8-B71B-0BC8D967C3037D71.jpg?width=950&quality=90&mode=crop"
+     },
+     {
+         parkName: "Andersonville National Historic Site",
+         parkImage: "https://www.exploregeorgia.org/sites/default/files/styles/listing_slideshow/public/listing_images/profile/129/18335-921.jpg?itok=kFvaPoz_"
+     },
+     {
+         parkName: "Appalachian National Scenic Trail",
+         parkImage: "https://www.nps.gov/appa/planyourvisit/images/ATC-Picture_2.jpg?maxwidth=1200&maxheight=1200&autorotate=false"
+     },
+     {
+         parkName: "Arabia Mountain National Heritage Area",
+         parkImage: "https://www.nps.gov/common/uploads/place/nri/20190322/places/82666CB0-AFD5-B8F9-F1075F4E40AA79BF/82666CB0-AFD5-B8F9-F1075F4E40AA79BF.jpg"
+     },
+     {
+         parkName: "Big Bend National Park",
+         parkImage: "https://www.nps.gov/bibe/planyourvisit/images/IMG_5417.JPG"
+     },
+     {
+         parkName: "Big Thicket National Preserve",
+         parkImage: "https://www.nationalparks.org/sites/default/files/7880854042_9eb8e55465_o.jpg"
+     },
+     {
+         parkName: "Biscayne National Park",
+         parkImage: "https://www.nps.gov/bisc/planyourvisit/images/BISC-UW-250711-2_1.jpg?maxwidth=650&autorotate=false"
+     },
+     {
+         parkName: "Canaveral National Seashore",
+         parkImage: "https://www.visitspacecoast.com/sites/default/files/styles/listing_slideshow/public/2019-08/Playalinda-Beach---Canaveral-National-Seashore--Beach-Entrance_final_compressed_2.jpg?itok=GMT5GMkt"
+     },
+     {
+         parkName: "Castillo de San Marcos National Monument",
+         parkImage: "https://www.visitstaugustine.com/sites/default/files/styles/cover/public/castillo_west_aerial_5x3.jpg"
+     },
+     {
+         parkName: "Chamizal National Memorial",
+        parkImage: "https://visit-el-paso-production.s3.amazonaws.com/places/images/000/000/011/optimized/chamizal_marker.jpg?1468956967"
     },
     {
-        parkName: "Amistad National Recreation Area",
-        parkImage: ""
-    },
-    {
-        parkName: "Andersonville National Historic Site",
-        parkImage: ""
-    },
-    {
-        parkName: "Appalachian National Scenic Trail",
-        parkImage: ""
-    },
-    {
-        parkName: "Arabia Mountain National Heritage Area",
-        parkImage: ""
-    },
-    {
-        parkName: "Big Bend National Park",
-        parkImage: ""
-    },
-    {
-        parkName: "Big Thicket National Preserve",
-        parkImage: ""
-    },
-    {
-        parkName: "Biscayne National Park",
-        parkImage: ""
-    },
-    {
-        parkName: "Canaveral National Seashore",
-        parkImage: ""
-    },
-    {
-        parkName: "Castillo de San Marcos National Monument",
-        parkImage: ""
-    },
-    {
-        parkName: "Chamizal National Memorial",
-        parkImage: ""
-    },
-    {
-        parkName: "",
-        parkImage: ""
-    },
-    {
-        parkName: "",
-        parkImage: ""
+        parkName: "Chattahoochee River National Recreation Area",
+        parkImage: "https://upload.wikimedia.org/wikipedia/commons/1/16/East_Palisades.JPG"
     },
     {
         parkName: "",
-        parkImage: ""
+        parkImage: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cannon_Row.jpg"
+    },
+    {
+        parkName: "Canyonlands National Park",
+        parkImage: "https://www.discovermoab.com/wp-content/uploads/2017/06/canyonlands_main_image.jpg"
     },
     {
         parkName: "",
