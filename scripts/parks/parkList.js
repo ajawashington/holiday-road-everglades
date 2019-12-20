@@ -4,10 +4,10 @@ import { useRegionsInRegion } from "../regions/regionsProvider.js"
 
 const contentElement = document.querySelector(".parkContainer")
 
-const ParkListComponent = () => {
+const ParkListComponent = (region) => {
     const parkCollection = useRegionsInRegion()
     contentElement.innerHTML += `
-        <div class="parkList">
+        <div class="parkList--${region}">
             ${
                 parkCollection.map(
                     (currentPark) => {

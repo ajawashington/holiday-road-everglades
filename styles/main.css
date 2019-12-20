@@ -12,6 +12,12 @@ position: absolute;
 z-index: -1;   
 }
 
+.logo{
+width: 15%;
+height: 25%;
+position: absolute;
+}
+
 .park {
 
     display: flex;
@@ -26,15 +32,16 @@ z-index: -1;
     column-width: 10px;
 }
 #head {
-    text-align: center;
+    margin-left: 25%;
+    margin-right: 30%;
     font-family: Optima;
-    font-size: 40px;
+    font-size: 80px;
+    position: sticky;
 }
-#viewItin{ 
-    text-align: right;
-}
+
 #header{
-    text-align: center;
+    margin-left: 41%;
+    margin-right: 20%;
     font-family: Optima;
     color: rgb(45, 143, 156);
     font-weight: bold;

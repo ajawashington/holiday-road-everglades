@@ -12,7 +12,7 @@ export const useRegions= () => {
     return parks
 }
 
-export const getParksbyRegion = (states) => {
+export const getParksbyRegion = (states, region) => {
    
     console.log("***I am fetching the parks***")
     return fetch(`https://developer.nps.gov/api/v1/parks?api_key=e7nUtP2jRRovkoLURmKzkGQAqyIbCktiHsgdj9Yx&statecode=${states}&limit=25`)
@@ -22,7 +22,7 @@ export const getParksbyRegion = (states) => {
 
            parksInRegion = parsedParks.data
         // console.log(parsedParks.data)
-                    ParkListComponent()
+                    ParkListComponent(region)
             }
             
         )
