@@ -1,7 +1,5 @@
 import { useEateries } from "../eateries/EateryProvider.js";
 
-// Need to figure out how to query select the div in park.js using the interpolated string for each state, on each button; current method is not working
-
 const eventHub = document.querySelector(".container");
 
 const ParkDialogComponent = () => {
