@@ -35,9 +35,9 @@ const parkComponent = (park) => {
         </div>
         <input type="button" value="Details" id="open--${parkState}">
             <dialog class="attractionList_attractions_${parkState}">
-                <h3>Bizzarie</h3>
+                <h2>Bizzarie</h2>
                         <div class="attractionList_bizzaries_${parkState}"></div>
-                <h3>Eateries</h3>
+                <h2>Eateries</h2>
                         <div class="attractionList_eateries_${parkState}"></div>
                 <input type="button" value="close" id="close--${parkState}">
             </dialog>
