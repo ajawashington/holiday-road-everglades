@@ -156,20 +156,16 @@ const parkImages = [
         parkImage: "https://upload.wikimedia.org/wikipedia/commons/1/16/East_Palisades.JPG"
     },
     {
-        parkName: "",
-        parkImage: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cannon_Row.jpg"
-    },
-    {
         parkName: "Canyonlands National Park",
         parkImage: "https://www.discovermoab.com/wp-content/uploads/2017/06/canyonlands_main_image.jpg"
     },
     {
-        parkName: "",
-        parkImage: ""
+        parkName: "Augusta Canal National Heritage Area",
+        parkImage: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_840,q_50,w_1680/v1/clients/augusta/Augusta_Canal_Headgate_Locks_Autumn_view_Credit_Reggie_Fraser_b0e63dd9-5325-42d8-8f35-0668cee62570.jpg"
     },
     {
-        parkName: "",
-        parkImage: ""
+        parkName: "Chickamauga & Chattanooga National Military Park",
+        parkImage: "https://www.pewtrusts.org/-/media/post-launch-images/2017/01/chick_chatt_cannon_row/chick_chatt_cannon_row_16x9.jpg"
     },
     {
         parkName: "",
@@ -186,10 +182,6 @@ const parkImages = [
     {
         parkName: "African American Civil War Memorial",
         parkImage: "https://washington-org.s3.amazonaws.com/s3fs-public/image-african_american_civil_war_memorial_public_domain-10932.jpg"
-    },
-    {
-        parkName: "Augusta Canal National Heritage Area",
-        parkImage: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_840,q_50,w_1680/v1/clients/augusta/Augusta_Canal_Headgate_Locks_Autumn_view_Credit_Reggie_Fraser_b0e63dd9-5325-42d8-8f35-0668cee62570.jpg"
     },
     {
         parkName: "Belmont-Paul Women's Equality National Monument",
@@ -369,7 +361,7 @@ const parkImages = [
     },
     {
         parkName: "San Antonio Missions National Historical Park",
-        parkImage: "https://www.sanantonio.gov/Portals/0/EasyGalleryImages/50/1284/national-park-article2.jpg"
+        parkImage: "https://upload.wikimedia.org/wikipedia/commons/9/93/Mission_Concepcion_San_Antonio.JPG"
     },
     {
         parkName: "Theodore Roosevelt National Park",
