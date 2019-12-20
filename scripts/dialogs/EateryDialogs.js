@@ -39,3 +39,13 @@ const ParkDialogComponent = () => {
   }) 
 }
 export default ParkDialogComponent
+
+// For popup of Eatery information if time allows
+// 
+// const popUp = document.querySelectorAll(".popUp");
+// popUp.forEach(pop => {
+//   pop.addEventListener("click", event => {
+//     const dialogElement = event;
+//     dialogElement.showModal();
+//   });
+// });
