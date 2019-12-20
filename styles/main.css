@@ -61,3 +61,12 @@ position: absolute;
 .dialogMargin {
     margin: 5px;
 }
+
+.parkDescription {
+    flex-wrap: wrap;
+}
+
+.cardTitles {
+    display: flex;
+    flex-direction: column;
+}
