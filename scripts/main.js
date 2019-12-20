@@ -3,7 +3,7 @@ import { useRegions, getAttractions} from "./regions/regionsProvider.js";
 import { selectedRegion } from "./regions/regionComponent.js";
 
 import { getEateries } from "./eateries/EateryProvider.js"
-import ParkDialogComponent from "./dialogs/EateryDialogs.js";
+import ParkDialogComponent from "./dialogs/ParkDialogs.js";
 
 
 

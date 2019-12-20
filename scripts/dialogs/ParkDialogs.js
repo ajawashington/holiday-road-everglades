@@ -3,11 +3,13 @@ import { useEateries } from "../eateries/EateryProvider.js";
 // Need to figure out how to query select the div in park.js using the interpolated string for each state, on each button; current method is not working
 
 const eventHub = document.querySelector(".container");
-const contentTarget = document.querySelector(".attractionList_eateries_${CSS.escape(parkState)}")
 
 const ParkDialogComponent = () => {
   eventHub.addEventListener("click", event => {
     if(event.target.id.startsWith("open--")){
+      const [prefix, code] = event.target.id.split("--")
+      const theDialog = document.querySelector(`.attractionList_attractions_${code}`)
+
       const eateries = useEateries()
       const foundEatery = eateries.find(
         (singleEatery) => {
@@ -15,9 +17,6 @@ const ParkDialogComponent = () => {
         }
       )
      
-      const dialogSiblingSelector = `#${event.target.id}+dialog`;
-      console.log(dialogSiblingSelector)
-      const theDialog = document.querySelector(dialogSiblingSelector);
       theDialog.showModal();
 
 
@@ -28,7 +27,7 @@ const ParkDialogComponent = () => {
           ${foundEatery.description}
         </div>
       `
-       document.querySelector(".attractionList_attractions_${CSS.escape(parkState)}").innerHTML = eateryHTML
+       document.querySelector(`.attractionList_eateries_${code}`).innerHTML = eateryHTML
        console.log(eateryHTML)
     }
 
