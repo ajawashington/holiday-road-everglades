@@ -16,9 +16,9 @@ export const regionSelect = () => {
                 }
             }
         )
-        render(matchingStates)
+        render(matchingStates, region)
     })
-    const render = (regions) => {
-        getParksbyRegion(regions[0].states)
+    const render = (regions, oneRegion) => {
+        getParksbyRegion(regions[0].states, oneRegion)
     }
 }
