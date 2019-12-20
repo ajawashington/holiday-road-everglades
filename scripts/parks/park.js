@@ -20,18 +20,23 @@ const parkComponent = (park) => {
 
     return `
     <section>
-        <div class="park">  
+        <div class="park">
+        <div class="cardTitles">
             <header class="parkHeader">
             ${park.fullName}
             </header>
+            <br>
             <div>
                 <img src="${currentParkImage.parkImage}">
             </div>
-        <div> 
+            <br>
+        <h3 class="parkState"> 
             State: ${park.states}
-        </div>
-        <div>
+        </h3>
+        <br>
+        <h4 class="parkDescription">
             Description: ${park.description}
+        </h4>
         </div>
         <input type="button" value="Details" id="open--${parkState}">
             <dialog class="attractionList_attractions_${parkState}">
