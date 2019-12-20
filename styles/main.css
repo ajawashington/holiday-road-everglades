@@ -70,3 +70,8 @@ position: absolute;
     display: flex;
     flex-direction: column;
 }
+
+img {
+    max-width: 650px;
+    max-height: auto;
+}
